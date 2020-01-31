@@ -23,8 +23,8 @@
     
     If your dataset contains different format, consider modifying the load method in the pD.hpp file.
     
-    If you want to clean your data by taking out certain columns, simply add column # onto the ignore vector in main.cpp. This 
-    vector is passed onto the clean method of kmc. 
+    If you want to clean your data by taking out certain columns, simply add column # onto the ignore vector in main.cpp. 
+    This vector is passed onto the clean method of kmc. 
 
 ### Remember to clean your data !
 
@@ -32,12 +32,16 @@
     The implementation is pretty simple. 
     The Cluster method is responsible for initalizing the algorithm. Its parameters are k and iterations. 
     
-    Once it is called, the features are mapped onto a hash map grabbing only column # and its minimum and maximum value. 
-    The initalization of the centroids begin right after where K vectors are created and mapped onto a hash map where key value is ID # and a centroid data structure. 
+    Once it is called, the features are mapped onto a hash map grabbing only column # and its minimum and maximum value.
+    The initalization of the centroids begin right after where K vectors are created and
+    mapped onto a hash map where key value is ID # and a centroid data structure. 
     
-    Centroid data structure contains the size of the centroid, its entries, and its means (a vector that holds the mean of each feature).
+    Centroid data structure contains the size of the centroid, 
+    its entries, and its means (a vector that holds the mean of each feature).
     
-    A while loop is initated for count < iterations. Within the loop, the centroids' entry vector is set and then their means are recalculated and then their entry vector is clear. 
+    A while loop is initated for count < iterations. Within the loop, the centroids' entry vector is set 
+    and then their means are recalculated and then their entry vector is clear. 
+    
     The centroid's entry is not clear once count == iterations - 1. This is simply displaying the last iteration.
     
  ### ***Other Repositories that You Might be Interested In***
