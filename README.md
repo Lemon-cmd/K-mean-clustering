@@ -1,2 +1,1 @@
-# K-mean-clustering
-K-Mean Clustering
+# K-mean Clustering in C++
